@@ -112,7 +112,9 @@ def main(argv=None):
     else:
         scripter.change_terminal(target.get_path())
 
+    return target
+
 
 if __name__ == "__main__":
     # Entrance to the program.
-    main(sys.argv[1:])
+    target = main(sys.argv[1:])
