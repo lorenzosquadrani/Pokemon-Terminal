@@ -112,9 +112,9 @@ def main(argv=None):
     else:
         scripter.change_terminal(target.get_path())
 
-    return target
+    return target.get_name()
 
 
 if __name__ == "__main__":
     # Entrance to the program.
-    target = main(sys.argv[1:])
+    pokemon_name = main(sys.argv[1:])
